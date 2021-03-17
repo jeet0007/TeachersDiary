@@ -54,9 +54,6 @@ Test : Will test using Mocha
 yarn test
 ```
 
-Test : Will run a sample test using mocha 
-NOTE : THIS TEST WILL FAIL IF NO DATA IS THERE SO TO TEST ADD SAMPLE DATA
-
 ## Appliocation Explaination
 I have created ```server.js``` to act as the enrtypoint for the api 
 ## Creating models
