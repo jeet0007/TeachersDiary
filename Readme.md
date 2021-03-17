@@ -1,8 +1,8 @@
 # Teachers and Courses system. #
-- [ ] Start Database
-- [ ] Build Server
-- [ ] Build model,controller,routes 
-- [x] create tests
+- [x] Start Database
+- [x] Build Server
+- [x] Build model,controller,routes 
+- [ ] create tests
 ## Database Design ##
 ![Untitled (1)](https://user-images.githubusercontent.com/32159637/111438013-5345d000-8736-11eb-82c1-63269e2dc77d.png)
 
