@@ -1,11 +1,11 @@
 # Teachers and Courses system.
 Required ```node_modules```
-1.```express``` : For the server and json
-2.```nodemon``` : For hot reload 
-4.```dotenv``` : For enviromental veriables
-5.```pg & pg-hstore``` : To connect to PostgreSQL. pg-hstore is a node package for serializing and deserializing JSON data to hstore format.
-6.```sequelize``` : To Handle promise
-7.```cors``` : To handle cross origin
+1. ```express``` : For the server and json
+2. ```nodemon``` : For hot reload 
+3. ```dotenv``` : For enviromental veriables
+4. ```pg & pg-hstore``` : To connect to PostgreSQL. pg-hstore is a node package for serializing and deserializing JSON data to hstore format.
+5. ```sequelize``` : To Handle promise
+6. ```cors``` : To handle cross origin
 
 ## Start Docker in local System
 I started by creating a database on Docker
