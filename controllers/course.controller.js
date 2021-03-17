@@ -38,3 +38,39 @@ exports.createCourse = async (req, res) => {
     }
 }
 
+
+
+
+//Get courses
+exports.getAllCourses = async (req, res) => {
+    try {
+        const courses = await Course.findAll()
+        return res.status(200).send({
+            message: "Success",
+            data: courses
+        })
+    } catch (err) {
+        return res.status(400).send({
+            message: "Failed",
+            data: `Server Error ${err}`
+        })
+    }
+}
+
+//Get courses with teacher
+exports.getAllCoursesWithTeachers = async (req, res) => {
+    try {
+        const courses = await Course.findAll({
+            include: Teacher
+        })
+        return res.status(200).send({
+            message: "Success",
+            data: courses
+        })
+    } catch (err) {
+        return res.status(400).send({
+            message: "Failed",
+            data: `Server Error ${err}`
+        })
+    }
+}

@@ -12,7 +12,8 @@ exports.getTeachers = async (req, res) => {
         })
     } catch (err) {
         return res.status(400).send({
-            message: `No teachers found`
+            message: "Failed",
+            data: `No teachers found`
         })
     }
 }
@@ -22,7 +23,8 @@ exports.createTeacher = async (req, res) => {
     const { first_name, last_name, age } = req.body;
     if (!first_name || !last_name || !age) {
         return res.status(400).send({
-            message: "Validation Error"
+            message: "Failed",
+            data: "Validation Error"
         });
     }
 
@@ -39,7 +41,8 @@ exports.createTeacher = async (req, res) => {
 
     } catch (error) {
         return res.status(500).send({
-            message: `Server Error :${error.message}`
+            message: "Failed",
+            data: `Server Error :${error.message}`
         })
     }
 
