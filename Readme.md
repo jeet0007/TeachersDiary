@@ -2,7 +2,7 @@
 - [x] Start Database
 - [x] Build Server
 - [x] Build model,controller,routes 
-- [ ] create tests
+- [x] create tests
 ## Database Design ##
 ![Untitled (1)](https://user-images.githubusercontent.com/32159637/111438013-5345d000-8736-11eb-82c1-63269e2dc77d.png)
 
@@ -31,7 +31,28 @@ User = postgres
 pass = pass
 port = localhost:5432
 
-## Appliocation setup
+
+## Aplications Features
+# Running the application 
+First after cloneing the application type
+```bash
+yarn install 
+```
+## Available Scripts
+Start : Will run the node server using ```node app.js```
+```bash
+yarn start
+```
+
+Dev : will run with hotreload
+```bash
+yarn dev
+```
+
+Test : Will run a sample test using mocha 
+NOTE : THIS TEST WILL FAIL IF NO DATA IS THERE SO TO TEST ADD SAMPLE DATA
+
+## Appliocation Explaination
 I have created ```server.js``` to act as the enrtypoint for the api 
 ## Creating models
 I created a models folder with ```index.js``` and use sequelize to set up associations in it
