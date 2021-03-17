@@ -41,12 +41,17 @@ yarn install
 ## Available Scripts
 Start : Will run the node server using ```node app.js```
 ```bash
-yarn start
+yarn run start
 ```
 
 Dev : will run with hotreload
 ```bash
-yarn dev
+yarn run dev
+```
+
+Test : Will test using Mocha
+```bash
+yarn test
 ```
 
 Test : Will run a sample test using mocha 

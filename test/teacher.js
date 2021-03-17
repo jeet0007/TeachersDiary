@@ -46,5 +46,4 @@ describe("Teacher Api", () => {
                 })
         })
     })
-    // Test create
 })
