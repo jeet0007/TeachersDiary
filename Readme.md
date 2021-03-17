@@ -1,4 +1,8 @@
-# Teachers and Courses system.
+# Teachers and Courses system. #
+## Database Design ##
+![Untitled (1)](https://user-images.githubusercontent.com/32159637/111438013-5345d000-8736-11eb-82c1-63269e2dc77d.png)
+
+
 Required ```node_modules```
 1. ```express``` : For the server and json
 2. ```nodemon``` : For hot reload 
