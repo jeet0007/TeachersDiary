@@ -17,6 +17,7 @@ const course = (sequelize, DataTypes) => {
             onUpdate: 'CASCADE'
         }
     }, {
+        tableName: 'Courses',
         timestamps: true,
         sequelize
     }

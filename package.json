@@ -1,12 +1,12 @@
 {
-  "name": "Schedule",
+  "name": "schedule",
   "version": "1.0.0",
   "main": "app.js",
   "author": "JeetCode",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon app.js",
-    "dev": "env NODE_ENV=development nodemon index.js"
+    "start": "node app.js",
+    "dev": "env NODE_ENV=development nodemon app.js"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -14,7 +14,6 @@
     "chai-http": "^4.3.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
-    "esm": "^3.2.25",
     "express": "^4.17.1",
     "mocha": "^8.3.2",
     "nodemon": "^2.0.7",

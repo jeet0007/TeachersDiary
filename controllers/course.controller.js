@@ -8,7 +8,8 @@ exports.createCourse = async (req, res) => {
     const { course_name, course_description, teacherId } = req.body;
     if (!course_name || !teacherId) {
         return res.status(400).send({
-            message: "Assign a teacher to this course"
+            message: "Failed",
+            data: "Assign a teacher to this course"
         })
     }
     const teacherExists = await Teacher.findOne({
@@ -18,7 +19,8 @@ exports.createCourse = async (req, res) => {
     })
     if (!teacherExists) {
         return res.status(400).send({
-            message: "Teacher does not exist"
+            message: "Failed",
+            data: "Teacher does not exist"
         })
     }
     try {
@@ -33,7 +35,8 @@ exports.createCourse = async (req, res) => {
         })
     } catch (error) {
         return res.status(500).send({
-            message: `Server Error ${error}`
+            message: "Failed",
+            data: `Server Error ${error}`
         })
     }
 }
