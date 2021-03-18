@@ -18,6 +18,7 @@ Required ```node_modules```
 4. ```pg & pg-hstore``` : To connect to PostgreSQL. pg-hstore is a node package for serializing and deserializing JSON data to hstore format.
 5. ```sequelize``` : To Handle promise
 6. ```cors``` : To handle cross origin
+7. ```mocha, chai, chai-http``` : Testing Framework
 
 ## Start Docker in local System
 I started by creating a database on Docker
@@ -62,5 +63,6 @@ yarn test
 I have created ```app.js``` to act as the enrtypoint for the api 
 ## Creating models
 I created a models folder with ```models/index.js``` and use sequelize to set up associations in it
+*
 <img width="316" alt="Screen Shot 2564-03-18 at 8 43 59 AM" src="https://user-images.githubusercontent.com/32159637/111560900-188b7880-87c6-11eb-94cb-eb3ebe94e871.png">
 
