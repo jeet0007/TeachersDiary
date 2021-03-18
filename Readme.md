@@ -2,7 +2,11 @@
 - [x] Start Database
 - [x] Build Server
 - [x] Build model,controller,routes 
-- [x] create tests
+- [x] Create tests for Teachers
+- [ ] Create tests for Cources
+- [ ] Create failing tests
+- [ ] Create mock database for test
+- [ ] Fix Dockerfile
 ## Database Design ##
 ![Untitled (1)](https://user-images.githubusercontent.com/32159637/111438013-5345d000-8736-11eb-82c1-63269e2dc77d.png)
 
@@ -55,6 +59,8 @@ yarn test
 ```
 
 ## Appliocation Explaination
-I have created ```server.js``` to act as the enrtypoint for the api 
+I have created ```app.js``` to act as the enrtypoint for the api 
 ## Creating models
-I created a models folder with ```index.js``` and use sequelize to set up associations in it
+I created a models folder with ```models/index.js``` and use sequelize to set up associations in it
+<img width="316" alt="Screen Shot 2564-03-18 at 8 43 59 AM" src="https://user-images.githubusercontent.com/32159637/111560900-188b7880-87c6-11eb-94cb-eb3ebe94e871.png">
+
